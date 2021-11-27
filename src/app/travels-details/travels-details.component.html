@@ -25,8 +25,8 @@
             {{ trip.name }}
         </div>
 
-        <div class="card mb-2" style="max-width: 100%;">
-            <div class="row g-0">
+        <div class="card" style="max-width: 100%;">
+            <div class="row">
                 <div class="col-md-6">
                     <img src="{{ trip.img }}" class="img-fluid rounded-start" alt="...">
                 </div>
@@ -47,12 +47,14 @@
                         </div>
                         <div class="price"> {{ trip.price | currency : 'EUR':true }} </div>
 
+                        <button class="btn" (click)="addToCart(trip)">{{ trip.name }}  <span>book now</span> </button>
+
 
                     </div>
 
 
                 </div>
-                <button class="btn" (click)="addToCart(trip)">{{ trip.name }}  <span>book now</span> </button>
+
             </div>
 
 

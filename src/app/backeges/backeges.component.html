@@ -14,8 +14,12 @@
     </h1>
 </section>
 
+
+
+
 <div class="list row">
     <div class="col col-4" *ngFor="let trip of travels; index as tripId">
+
         <h1>
             <a routerLink="travels/{{tripId}}">
                 {{ trip.name }}
@@ -29,3 +33,18 @@
 
 
 <!-- packages section ends -->
+
+
+
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body" *ngFor="let trip of travels; index as tripId">
+
+        <h1 class="card-title">
+            <a routerLink="travels/{{tripId}}">
+             {{ trip.name }}
+         </a>
+        </h1>
+
+        <p class="card-text" *ngIf="trip.description">Description: {{ trip.description }}</p>
+    </div>
+</div> -->
