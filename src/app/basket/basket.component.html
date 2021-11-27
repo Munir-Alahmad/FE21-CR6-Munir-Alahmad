@@ -1,0 +1,14 @@
+<div class="cont">
+    <div class="bas">
+        <p>Basket</p>
+    </div>
+
+
+    <div class="cart-item" *ngFor="let trip of cart">
+        <span> {{ trip.name }}</span>
+        <span> {{ trip.price | currency : 'EUR':true }} </span>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--orange);
+    color: #fff;
+}
+
+
+/* .travel-details {
+    padding-top: 110px;
+    padding-bottom: 15px;
+} */
+
+.names {
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 120px;
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0
+}
+
+.heading span {
+    margin: 2px;
+    font-size: 30px;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.content {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.content .space {
+    padding-right: 7px;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
+.deteils {
+    padding-bottom: 200px;
+}
+
+.deteils .card {
+    border-radius: 7px;
+    /* background-color: rgba(222, 238, 129, 0.303); */
+    margin: 10px;
+}
+
+
+/* .card .col .row .card-body p {
+    font-size: 20px;
+    padding-top: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(148, 153, 119, 0.789);
+} */
+
+.card .row .card-body p {
+    padding-bottom: 100px;
+    padding-top: 15px;
+    font-size: 20px;
+    /* flex: 1 1 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1); */
+}
+
+.card .row .col img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .row .col .content {
+    padding: 1rem;
+}
+
+.card .row .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.card .row .content h3 i {
+    color: var(--orange);
+}
+
+.card .row .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.card .row .content .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding-top: 7px;
+}
+
+.card .row .content .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.card .row .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.card .row .content a span {
+    padding-left: 15px;
+    color: rgba(155, 129, 25, 0.837);
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    .imgp p {
+        max-width: 800px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+    .imgp p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading span {
+        font-size: 2.5rem;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+    .imgp p {
+        font-size: 8px;
+    }
+}
+
+
+/* copy */
+
+
+/* 
+.travel-details {
+    padding-top: 110px;
+    padding-bottom: 15px;
+}
+
+.names {
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--orange);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 120px;
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0
+}
+
+.heading span {
+    margin: 2px;
+    font-size: 30px;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.content .space {
+    padding-right: 7px;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
+.box-container {
+    background-color: rgba(148, 153, 119, 0.481);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.imgp {
+    display: flex;
+    justify-content: center;
+}
+
+.imgp img {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.imgp p {
+    font-size: 20px;
+    padding: 20px 15px 20px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(148, 153, 119, 0.789);
+}
+
+.box-container .box {
+    flex: 1 1 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.box-container .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-container .box .content {
+    padding: 1rem;
+}
+
+.box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.box-container .box .content h3 i {
+    color: var(--orange);
+}
+
+.box-container .box .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding-top: 7px;
+}
+
+.box-container .box .content .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.box-container .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.box-container .box .content a span {
+    padding-left: 15px;
+    color: rgba(155, 129, 25, 0.837);
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    .imgp p {
+        max-width: 800px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+    .imgp p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading span {
+        font-size: 2.5rem;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+    .imgp p {
+        font-size: 8px;
+    }
+} */

@@ -1,0 +1,31 @@
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+</section>
+
+<div class="list row">
+    <div class="col col-4" *ngFor="let trip of travels; index as tripId">
+        <h1>
+            <a routerLink="travels/{{tripId}}">
+                {{ trip.name }}
+            </a>
+        </h1>
+        <p *ngIf="trip.description">
+            Description: {{ trip.description }}
+        </p>
+    </div>
+</div>
+
+
+<!-- packages section ends -->

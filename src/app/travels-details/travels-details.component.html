@@ -1,0 +1,98 @@
+<section class="travel-details" id="travel-details">
+    <h1 class="heading">
+        <span>T</span>
+        <span>R</span>
+        <span>A</span>
+        <span>V</span>
+        <span>E</span>
+        <span>L</span>
+        <span>E</span>
+        <span class="space"></span>
+        <span>D</span>
+        <span>E</span>
+        <span>T</span>
+        <span>A</span>
+        <span>I</span>
+        <span>L</span>
+        <span>S</span>
+    </h1>
+</section>
+
+
+<div class="deteils">
+    <div *ngIf="trip">
+        <div class="names">
+            {{ trip.name }}
+        </div>
+
+        <div class="card mb-2" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="{{ trip.img }}" class="img-fluid rounded-start" alt="...">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <p class="card-text">{{ trip.description }}</p>
+                    </div>
+
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> <span class="space"></span>{{ trip.name }} </h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> {{ trip.price | currency : 'EUR':true }} </div>
+
+
+                    </div>
+
+
+                </div>
+                <button class="btn" (click)="addToCart(trip)">{{ trip.name }}  <span>book now</span> </button>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- 
+<div class="deteils">
+    <div *ngIf="trip">
+        <div class="names">
+            {{ trip.name }}
+        </div>
+
+
+        <div class="box-container">
+            <div class="box">
+                <div class="imgp">
+                    <img src="{{ trip.img }}" alt="">
+                    <p>{{ trip.description }}</p>
+                </div>
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> <span class="space"></span>{{ trip.name }} </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> {{ trip.price | currency : 'EUR':true }} </div>
+                    <button class="btn" (click)="addToCart(trip)">{{ trip.name }}  <span>book now</span> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> -->
